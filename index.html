@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sticky Footer</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .main {
+            /* border: 1px solid black; */
+            /* display: block; */
+            flex: 1;
+        }
+        .header {
+            background-color: red;
+        }
+        .footer {
+            background-color: blue;
+        }
+        .main {
+            background-color: #eee;
+        }
+        .content {
+            display: none;
+        }
+    </style>
+    <script>
+        buttonClick = function() {
+            var content = document.getElementById("content");
+            if(content.classList.contains("content")) {
+                content.classList.remove("content");
+            } else {
+                content.classList.add("content");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>This is header</h1>
+    </div>
+    <div class="main">
+        <h1>This is main</h1>
+        <button type="button" onclick="buttonClick()">Click Me</button>
+        <div id="content" class="content">
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis odit delectus esse vitae, ullam nemo velit sunt quos sed, quis, labore quisquam autem deleniti aut tenetur modi repellendus provident.
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>This is footer</h1>
+    </div>
+</body>
+</html>
